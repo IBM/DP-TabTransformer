@@ -16,8 +16,7 @@ from tabtransformertf.utils.preprocessing import df_to_dataset, build_categorica
 import tensorflow_privacy
 
 def evaluate(tabtransformer):
-    total_data = pd.read_csv('data/2018/1-Year/ACSIncome_CA.csv')
-    # total_data = pd.read_csv('data/2018/1-Year/ACSIncome_CA.csv')
+    total_data = pd.read_csv('data/2018/1-Year/ACSIncome_IN.csv')
 
     # Column information
     NUMERIC_FEATURES = total_data.select_dtypes(include=np.number).columns
@@ -60,7 +59,6 @@ def finetune(tabtransformer,
 
 
     total_data = pd.read_csv('data/2018/1-Year/ACSIncome_IN.csv')
-    # total_data = pd.read_csv('data/2018/1-Year/ACSIncome_CA.csv')
 
     # Column information
     NUMERIC_FEATURES = total_data.select_dtypes(include=np.number).columns
@@ -177,7 +175,6 @@ def finetune(tabtransformer,
 def pretrain(with_dp = False, noise = 0, epochs = 1, use_adapter = False, use_lora = False):
 
     train_data = pd.read_csv("data/2018/1-Year/ACSIncome_CA.csv")
-    # train_data = pd.read_csv("data/2018/1-Year/ACSIncome_IN.csv")
 
     # Column information
     NUMERIC_FEATURES = train_data.select_dtypes(include=np.number).columns

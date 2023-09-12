@@ -30,7 +30,7 @@ we use `ACSIncome_IN` dataset by default, to use your own data, just put it on `
 
 ## Parameter-Efficient Fine-Tuning
 
-We offer a straightforward script, `run_dp_sgd.py`, which performs pre-training and fine-tuning of the `TabTransformer` using `DP-SGD`. To experiment with it, simply execute the following command:
+We offer a straightforward script, `run_dp_sgd.py`, which performs pre-training and fine-tuning of the `TabTransformer` using `DP-SGD`. This is done using the `ACSIncome_CA` dataset for pre-training and the `ACSIncome_IN` dataset for fine-tuning. To experiment with it, simply execute the following command:
 
 ```
 python run_dp_sgd.py

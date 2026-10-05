@@ -86,7 +86,7 @@ tqdm==4.65.0
 typeguard==2.13.3
 typing_extensions==4.5.0
 tzdata==2023.3
-urllib3==1.26.15
+urllib3==2.8.0
 Werkzeug==2.2.3
 wrapt==1.14.1
 zipp==3.15.0
